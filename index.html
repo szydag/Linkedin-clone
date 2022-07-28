@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/6a28faa957.js" crossorigin="anonymous"></script> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="indexjava.js">
     <title>LınkedIn</title>
   </head>
   <body>
@@ -19,35 +20,35 @@
     <div id="navbar">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 logo">
+                <div class="col-6 logo">
                     <img src="resim/logo.png" alt="" width="150px">
                 </div>
-                <div class="col-sm-6 ikinci">
+                <div class="col-6 ikinci">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class=" d-none d-lg-block col-lg-6">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-sm-3">
+                                        <div class=" col-lg-3">
                                             <a href=""> <i class="fa-solid fa-compass"></i>Keşfet</a>
                                         </div>
-                                        <div class="col-sm-3">
+                                        <div class="col-lg-3">
                                             <a href=""> <i class="fa-solid fa-user-group"></i>Kişiler</a>
                                         </div>
-                                        <div class="col-sm-3">
+                                        <div class="col-lg-3">
                                             <a href=""> <i class="fa-solid fa-chalkboard"></i>Learning</a>
                                         </div>
-                                        <div class="col-sm-3" style="border-right:2px solid #919191 ;">
+                                        <div class="col-lg-3" style="border-right:2px solid #919191 ;">
                                             <a href=""> <i class="fa-solid fa-suitcase" ></i>İşilanları </a>
                                             
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3 hemen">
+                            <div class="col-sm-6 col-lg-3 hemen">
                                 <a href="" style="color: black">Hemen Katıl</a>
                             </div>
-                            <div class="col-sm-3 ac">
+                            <div class="col-sm-6 col-lg-3 ac">
                                 <a href=""  style="color:blue">Oturum Aç</a>
                             </div>
                         </div>
@@ -60,7 +61,7 @@
     <div id="section">
         <div class="container">
             <div class="row">
-                <div class="col-sm-5">
+                <div class="col-sm-12 col-lg-5">
                     <h1><b>Profesyonel topluluğunuza hoş geldiniz!</b></h1>
                     <ul>
                         <li >
@@ -89,7 +90,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-7" id="adam">
+                <div class="col-sm-12 col-lg-7" id="adam">
                     <img src="resim/adam.svg" alt="" width="700px">
                 </div>
             </div>
@@ -99,10 +100,10 @@
     <div id="section2">
         <div class="container">
             <div class="row">
-                <div class="col-sm-5" id="sizin">
+                <div class="col-sm-12 col-lg-5" id="sizin">
                     <h1><b>Sizin için uygun <br>olan işi veya stajı bulun</b></h1>
                 </div>
-                <div class="col-sm-7" id="butonlar">
+                <div class="col-sm-12 col-lg-7" id="butonlar">
                     <h6>ÖNERİLEN ARAMALAR</h6> <br>
                     <div id="box">
                         <ul>
@@ -204,10 +205,10 @@
     <div id="section3">
         <div class="container">
             <div class="row">
-                <div class="col-sm-5">
+                <div class="col-sm-9 col-lg-5">
                     <h1>Milyonlarca kişinin iş ilanınızı görmesi için işinizi yayınlayın</h1>
                 </div>
-                <div class="col-sm-7">
+                <div class="col-sm-12 col-lg-7">
                     <button class="mavi">İş ilanı yayınla</button>
                 </div>
             </div>
@@ -221,26 +222,32 @@
                 <button onclick="ilerikaydir()" id="ileri">İleri ></button>
             </div>
             <div class="galeri" id="galeri">
-               <div class="yazı">
-                    <h1>Çalışmaya açık olduğunuzu,<br> doğru kişilerin bilmesini <br>sağlayın</h1>
-                    <h2>Çalışmaya Açık özelliği ile, yeni iş fırsatları aradığınızı kariyer uzmanlarına gizli olarak bildirebilir veya LinkedIn topluluğunuzla herkese açık olarak paylaşabilirsiniz.</h2>
+                <div id="fotograf">
+                    <div class="yazı">
+                        <h1>Çalışmaya açık olduğunuzu,<br> doğru kişilerin bilmesini <br>sağlayın</h1>
+                        <h2>Çalışmaya Açık özelliği ile, yeni iş fırsatları aradığınızı kariyer uzmanlarına gizli olarak bildirebilir veya LinkedIn topluluğunuzla herkese açık olarak paylaşabilirsiniz.</h2>
+                    </div>
+                    <div class="resim">
+                        <img src="resim/sec41.png" alt="" width="450px">
+                    </div> 
+                </div>  
+                <div id="fotograf">
+                    <div class="yazı">
+                        <h1>Bugün yaptığınız görüşmeler,<br> yarın için yeni fırsatlar <br>oluşturabilir.</h1>
+                        <h2>Tanıdığınız kişilere mesaj göndermek, kariyerinizdeki bir sonraki adımı atarken ilişkilerinizi güçlendirmek için harika bir yöntemdir.</h2>
+                    </div>
+                    <div class="resim">
+                        <img src="resim/sec42.png" alt="" width="450px" >
+                    </div>
                 </div>
-                <div class="resim">
-                    <img src="resim/sec41.png" alt="" width="450px">
-                </div>   
-                <div class="yazı">
-                    <h1>Bugün yaptığınız görüşmeler,<br> yarın için yeni fırsatlar <br>oluşturabilir.</h1>
-                    <h2>Tanıdığınız kişilere mesaj göndermek, kariyerinizdeki bir sonraki adımı atarken ilişkilerinizi güçlendirmek için harika bir yöntemdir.</h2>
-                </div>
-                <div class="resim">
-                    <img src="resim/sec42.png" alt="" width="450px" >
-                </div>
-                <div class="yazı">
-                    <h1>Sektörünüzden haberdar olun</h1>
-                    <h2>LinkedIn‘de, sektörünüzdeki en güncel konular hakkında bilgi sahibi olabilmeniz için canlı videolardan hikayelere ve haber bültenlerine kadar birçok yöntem mevcuttur.</h2>
-                </div>
-                <div class="resim">
-                    <img src="resim/sec43.png" alt="" width="450px">
+                <div id="fotograf">
+                    <div class="yazı">
+                        <h1>Sektörünüzden haberdar olun</h1>
+                        <h2>LinkedIn‘de, sektörünüzdeki en güncel konular hakkında bilgi sahibi olabilmeniz için canlı videolardan hikayelere ve haber bültenlerine kadar birçok yöntem mevcuttur.</h2>
+                    </div>
+                    <div class="resim">
+                        <img src="resim/sec43.png" alt="" width="450px">
+                    </div>
                 </div>
             </div>
         </div>
@@ -249,14 +256,14 @@
     <div id="section5">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-lg-6">
                     <img src="resim/yardımcı.svg" alt="" width="310px">
                     <h1><strong>Yardımcı olabilecek<br> kişilerle bağlantı kurun</strong></h1>
                     <div id="tanidiginiz">
                         <a href=""><b>Tanıdığınız kişileri bulun</b></a>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-12 col-lg-6">
                     <img src="resim/basarılı.svg" alt="" width="310px">
                     <h1><strong>Başarılı olmak için <br> gerekli olan<br> yetenekleri öğrenin</strong></h1>
                     <div id="konu">
@@ -268,8 +275,7 @@
     </div>
 
     <div id="section6" >
-       <!-- <img src="resim/backgraund.png" alt="" style="position:absolute; transform: scale(1.0); " >-->
-        <h1>LinkedIn‘deki, iş arkadaşlarınıza, okul <br> arkadaşlarınıza ve dostlarınıza katılın.</h1>
+        <h1>LinkedIn‘deki, iş arkadaşlarınıza, okul  arkadaşlarınıza ve dostlarınıza katılın.</h1>
         <div id="baslayin">
             <button><b>Başlayın</b></button>
         </div>
@@ -278,10 +284,10 @@
     <div id="section7">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4" id="logoyeri">
+                <div class="col-sm-12 col-lg-4" id="logoyeri">
                     <span style="color:rgb(10, 102, 194) ;"><b>Linked</b><i class="fa-brands fa-linkedin"></i> </span>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-12 col-lg-2">
                     <h6>Genel</h6>
                     <ul>
                         <li><a href="">Kayıt Olun </a></li>
@@ -293,7 +299,7 @@
                         <li><a href="">Geliştiriciler</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-12 col-lg-2">
                     <h6><b>LinkedIn'e Göz Atın</b></h6>
                     <ul>
                         <li><a href="">Learning</a></li>
@@ -304,7 +310,7 @@
                         <li><a href="">Ürünler</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-12 col-lg-2">
                     <h6><b>İşletme Çözümleri</b></h6>
                     <ul>
                         <li><a href="">Yetenek</a></li>
@@ -313,7 +319,7 @@
                         <li><a href="">Learning</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-12 col-lg-2">
                     <h6><b>Dizinler</b></h6>
                     <ul>
                         <li><a href="">Üyeler</a></li>
@@ -338,7 +344,7 @@
     <div id="section8">
         <div class="container">
             <div class="row">
-                <div class="col-sm-1 logo">
+                <div class="col-sm-6 col-lg-1 logo">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 56 14" preserveAspectRatio="xMinYMin meet" version="1.1" fill="CurrentColor" focusable="false" class="lazy-loaded">
                         <g class="inbug" fill-rule="evenodd">
                           <path d="M14,1.25 L14,12.75 C14,13.44 13.44,14 12.75,14 L1.25,14 C0.56,14 0,13.44 0,12.75 L0,1.25 C0,0.56 0.56,0 1.25,0 L12.75,0 C13.44,0 14,0.56 14,1.25" class="bug-text-color" fill="transparent" transform="translate(42.000000, 0.000000)"></path>
@@ -354,55 +360,55 @@
                       </g>
                     </svg>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-6 col-lg-1">
                     <span>&copy;2022</span>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-6 col-lg-1">
                     <a href="">Hakkında</a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-6 col-lg-1">
                     <a href="">Erişilebilirlik</a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-6 col-lg-1">
                     <a href="">Kullanıcı Anlaşması</a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-6 col-lg-1">
                     <a href="">Gizlilik Politikası</a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-6 col-lg-1">
                     <a href="">Çerez Politikası</a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-6 col-lg-1">
                     <a href="">Telif Hakkı Politikası</a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-6 col-lg-1">
                     <a href="">Marka Politikası</a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-6 col-lg-1">
                     <a href="">Ziyaretçi Kontrolleri</a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-6 col-lg-1">
                     <a href="">Topluluk Yönergeleri</a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-6 col-lg-1">
                     <a href="">Dil</a>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <script>
-
         var kontrol = 0;
         function yukselt(){
-            if( (kontrol%2) == 0){
-                document.getElementById("box").style.height = "620px";
-                document.getElementById("daha").innerHTML = "Daha az göster &#5169;";
-            }else{
-                document.getElementById("box").style.height = "200px";
-                document.getElementById("daha").innerHTML = "Daha fazla göster &#5167;";
-            }
-            kontrol++;
+        if( (kontrol%2) == 0){
+            document.getElementById("box").style.height = "620px";
+            document.getElementById("daha").innerHTML = "Daha az göster &#5169;";
+        }else{
+            document.getElementById("box").style.height = "200px";
+            document.getElementById("daha").innerHTML = "Daha fazla göster &#5167;";
+        }
+        kontrol++;
         }
         var sayac=1;
         function ilerikaydir(){
@@ -417,7 +423,7 @@
                 sayac++;
                 document.getElementById("ileri").disabled=true;
                 break;
-        }
+            }
         }
         function gerikaydir(){
             switch(sayac) {
@@ -431,12 +437,10 @@
                 sayac--;
                 document.getElementById("ileri").disabled=false;
                 break;
+            }
         }
-        }
-
-        
-
     </script>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
