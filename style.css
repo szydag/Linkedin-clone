@@ -3,6 +3,7 @@
     src: url('Roboto-Thin.ttf');
 }body {
     font-family: 'Roboto';
+    overflow-x: hidden;
  }
  /*NAVBAR*/
 #navbar .container .row {
@@ -11,7 +12,7 @@
 .logo {
     margin-top: 15px;
 }
-#navbar .container .row .col-sm-6 .container {
+#navbar .container .row .col-lg-6 .container {
     margin-top: 14px;
 }
 #navbar .container .row a {
@@ -84,7 +85,7 @@
     text-align: right;
 }
 
-#section .container .row .col-sm-5 ul li {
+#section .container .row .col-lg-5 ul li {
     display: flex;
     justify-content: space-between;
 }
@@ -202,6 +203,7 @@ button i {
     font-weight: bold;
     color: rgb(148,95,81);
 }
+
 .cerceve {
     width: 100%;
     padding: 100px 100px ;
@@ -218,10 +220,16 @@ button i {
 .yazı {
     width: 50%;
     margin-left: 100px;
+    margin-top: 50px;
 }
 .resim {
     width: 50%;
     margin-left: 60px;
+}
+#fotograf{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 #ilerigeri {
@@ -237,11 +245,14 @@ button i {
     border-radius: 20px;
     color: black;
 }
+#ilerigeri button:disabled {
+    cursor: not-allowed;
+}
 
-#section5 .col-sm-6{
+#section5 .col-lg-6{
     margin-top: 100px;
 }
-#section5 .col-sm-6 img {
+#section5 .col-lg-6 img {
     margin-bottom: 60px;
 }
 
@@ -334,17 +345,17 @@ button i {
  }
 /*SECTİON8*/
 
-#section8 .col-sm-1 {
+#section8 .col-lg-1 {
     padding: 0;
     margin: 0;
     font-size: 11px;
     text-align: center;
     font-weight: bold;
 }
-#section8 .col-sm-1 a{
+#section8 .col-lg-1 a{
     color: #747283;
 }
-#section8 .col-sm-1 a:hover {
+#section8 .col-lg-1 a:hover {
     color:  rgb(10, 102, 194);
 }
  #section8 .logo {
@@ -352,3 +363,75 @@ button i {
     height: 5px;
  }
 
+
+ @media only screen and (max-width:600px){
+    #navbar .logo img {
+        width: 100px;
+    }
+    #navbar .ikinci {
+        font-size: 2px;
+    }
+    #section #adam {
+        text-align: center;
+    }
+    #section #adam img {
+        width: 300px;
+    }
+    #section3 .mavi {
+        margin-top: -200px;
+        margin-bottom: 100px;
+    }
+    #section4 {
+        margin: 0;
+        width: 100%;
+    }
+    .galeri  {
+        padding: 0px;
+        margin: 0px;
+    }
+    .cerceve {
+        margin: 0;
+        padding: 0;
+    }
+    #section4 #fotograf{
+        flex-direction: column-reverse;
+        width: 40%;
+        font-size: 10px;
+    }
+    
+    #section4 .yazı{
+         width: 300px;
+    }
+    #section4 .resim{
+        width: 100%;
+    }
+    .resim img {
+        width: 300px;
+    }
+    .yazı h1 {
+        font-size: 23px;
+    }
+    .yazı h2 {
+        font-size: 18px;
+    }
+    .galeri {
+        display: flex;
+        flex-direction: row;
+    }
+    #section6 {
+        background:none;
+        padding: 100px 0 10px 5px;
+        height: 250px;
+    }
+    #section6 h1{
+        font-size: 35px;
+        font-weight: lighter;
+    }
+    #section7 {
+        margin-left: -400px;
+        font-size: medium;
+    }
+    #section8 .logo svg {
+        width: 50px;
+    }
+ }
